@@ -76,6 +76,7 @@ PROCINFO_MM_MMUFLAGS 8 /* offsetof(struct proc_info_list, __cpu_mm_mmu_flags)
 ```
 
 首先建立包含__turn_mmu_on函数1M空间的平映射(virt addr = phy addr)
+物理地址和虚拟地址一样，当MMU开始工作时，不会导致PC+4后取到非法地址的问题
 ----------------------------------------
 
 ```
